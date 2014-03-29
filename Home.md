@@ -1,42 +1,38 @@
 # Welcome
 
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
+Welcome to Atlantis X PHP Framework Project Page. 
 
-## Wiki features
+## Framework Key Features
 
-This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax.
 
-The wiki itself is actually a git repository, which means you can clone it, edit it locally/offline, add images or any other file type, and push it back to us. It will be live immediately.
-
-Go ahead and try:
+## Quickstart
 
 ```
-$ git clone https://nematix@bitbucket.org/nematix/atlantis.git/wiki
+$ git clone https://nematix@bitbucket.org/nematix/atlantis.git
 ```
 
-Wiki pages are normal files, with the .md extension. You can edit them locally, as well as creating new ones.
+## Naming Convention
 
-## Syntax highlighting
+### Identification
 
-
-You can also highlight snippets of text (we use the excellent [Pygments][] library).
-
-[Pygments]: http://www.pygments.org/
-
-
-Here's an example of some Python code:
+System suggesting a standard naming convention to be used for identification on variable, database columns and others. Identification naming convention specification example for identification card as follow.
 
 ```
-#!python
-
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
+idic <id><name>
 ```
 
+Identification naming is in two part, first is reserve name <id> and second part is name of the identification and it can be any name. In example is `ic` refer to identification card.
 
-You can check out the source of this page to see how that's done, and make sure to bookmark [the vast library of Pygment lexers][lexers], we accept the 'short name' or the 'mimetype' of anything in there.
-[lexers]: http://pygments.org/docs/lexers/
+```
+idic_no <id><name>_<meta>
+```
 
+Third part of the naming convention is to describe a sub information of the identification, it can be a actual number of the identification itself, a description or any meta data that can be attached to the identification. In example `no` refer to actual number of the identification.
 
-Have fun!
+```
+$idic = 1
+$idic_no = 'A123456'
+$idic_text = 'Identification Card'
+```
+
+Example showed a basic usage of the naming convention in source code. The `$idic` variable might refer to auto-increased id in database configuration and `$idic_no` might refer to actual identification number.
