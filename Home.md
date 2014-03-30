@@ -36,3 +36,14 @@ $idic_text = 'Identification Card'
 ```
 
 Example showed a basic usage of the naming convention in source code. The `$idic` variable might refer to auto-increased id in database configuration and `$idic_no` might refer to actual identification number.
+
+## Application (Atlantis\Application)
+
+### Details
+Details is representation of data or data structure of the application. Details format is a JSON structure work as reference for application to save to get data related to current application.
+
+### Cards
+Cards is a collection of form element in to presenting data from Details.
+
+### Forms
+Forms is a HTML elements.
