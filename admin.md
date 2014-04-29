@@ -1,9 +1,9 @@
 # Atlantis Admin
 
-
 <a name="introduction"></a>
 ## Introduction
 
+<a name="api"></a>
 ## Admin API
 Admin API as other API in Atlantis providing a facilities to front-end to communicate and getting data from Atlantis back-end using Ajax or Atlantis Rest library. Example shown below on how to retrieve a user from information using Atlantis Rest library.
 
@@ -17,12 +17,13 @@ Admin API as other API in Atlantis providing a facilities to front-end to commun
 
 ### User API
 
+<a name="events"></a>
 ## Events
 
 #### Events Trigger for Controller Auth
 
 Event                   | Parameters          | Description
-------------------------------------------------------------
+------------------------|---------------------|--------------------------------------------------------
 auth.login              | $realm, $credential | Trigger upon normal authentication
 auth.login.alternative  | $realm, $credential | Trigger when credential email fail valication process
 user.registering        | $realm              | 
