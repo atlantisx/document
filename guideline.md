@@ -37,6 +37,13 @@ $idic_text = 'Identification Card'
 
 Example showed a basic usage of the naming convention in source code. The `$idic` variable might refer to auto-increased id in database configuration and `$idic_no` might refer to actual identification number.
 
+## Core (Atlantis\Core)
+
+### View
+
+### Group View (Realm)
+Group view can be use to separate a layout and logic based on user group assigned. Group View is realm to authenticated user.
+
 ## Application (Atlantis\Application)
 
 ### Details
